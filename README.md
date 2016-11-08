@@ -9,7 +9,7 @@ Input the whole project, choose MainActivity.java file and click run button. Aft
 (no limited to Nexus 5, the screen will automatically adjust to fit the screen size), the stratgame page 
 should show as below.
 
-![Start Page](.／startgamepage.png)
+![Start Page](./startgamepage.png)
 
 >`LOK-TAR OGAR` : Start Game Button(if you are a big world of warcraft fan, you will definitely know its meaning)
 
