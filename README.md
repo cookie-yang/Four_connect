@@ -9,7 +9,7 @@ Input the whole project, choose MainActivity.java file and click run button. Aft
 (no limited to Nexus 5, the screen will automatically adjust to fit the screen size), the stratgame page 
 should show as below.
 
-![Start Page](./drawable/startgamepage.png)
+![Start Page](.／startgamepage.png)
 
 >`LOK-TAR OGAR` : Start Game Button(if you are a big world of warcraft fan, you will definitely know its meaning)
 
@@ -19,7 +19,7 @@ should show as below.
 
 After you click the `LOK_TAR OGAR` button it will change to the game page as below.
 
-![Game Page](./drawable/gamepage.png)
+![Game Page](./gamepage.png)
 
 In this page, you can begin your game by click each column to place the chess.
 
@@ -35,13 +35,13 @@ This part will explain main module and function of this game
 
 ### **Layout**
 
-The **static layout** is mainly defined in two xml files : [_`activity_game`_](./layout/activity_game.xml) and [_`activity_main.xml`_](./layout/activity_main.xml)
+The **static layout** is mainly defined in two xml files : [_`activity_game`_](./app/src/main/res/layout/activity_game.xml) and [_`activity_main.xml`_](./app/src/main/res/layout/activity_main.xml)
 
 _`activity_main`_ uses _RelativeLayout_ , and uses _TextView_ to show `student name` and `student number`, _Button_ to start game.
 
 _`activity_game`_ uses _RelativeLayout_ as main layout, _RelativeLayout_ to construct outline of chessboard ,  _ImageView_ to store `chess at the bottom` , _Button_ to create `back` and `restart` button.
 
-The **dynamic layout** is mainly defined in [_`Game.java`_](./Game.java)
+The **dynamic layout** is mainly defined in [_`Game.java`_](./app/src/main/java/com/example/neo/connect_four/Game.java)
 
 
 >for (int i=0;i<7;i++)  
@@ -86,7 +86,7 @@ This button defined in [`MainActivity.java`][MainActivity path] is used to chang
 >}  
 >});  
 
-[MainActivity path]:./MainActivity.java
+[MainActivity path]:./app/src/main/java/com/example/neo/connect_four/MainActivity.java
 
 ### **Game.java**
 
