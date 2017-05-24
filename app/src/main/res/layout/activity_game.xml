@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:id="@+id/toppanel"
+        android:background="@drawable/toppanel"
+        />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:id="@+id/cheeseboard"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_alignTop="@+id/cheeseboard"
+            android:layout_alignLeft="@+id/back"
+            android:layout_alignStart="@+id/back"
+            android:layout_marginTop="20dp">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:text="Restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/gameover"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <ImageView
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@drawable/hordchess"
+        android:layout_weight="0.23"
+        android:id="@+id/turnview1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/winNum1"
+        android:text="1"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/turnview1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+
+    <ImageView
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@drawable/alliancechess"
+        android:layout_weight="0.23"
+        android:id="@+id/turnview2"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/gameover"
+        android:layout_toStartOf="@+id/gameover" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="2"
+        android:id="@+id/winNum2"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/turnview2"
+        android:layout_toStartOf="@+id/turnview2" />
+
+
+</RelativeLayout>
